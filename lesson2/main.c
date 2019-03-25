@@ -10,3 +10,12 @@
 //a.Без рекурсии.
 //b.Рекурсивно.
 
+
+void DecToBn(int x)
+{
+	if (x > 2)
+	{
+		DecToBin(x / 2);
+	}
+	printf("%d", x % 2);
+}
