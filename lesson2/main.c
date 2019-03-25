@@ -28,7 +28,8 @@ int power(int a, int b)
 
 int main(int argc, const char *argv[])
 {
-	char *locale = setlocale(LC_ALL, "");//русский язык в консоли
+	//char *locale = setlocale(LC_ALL, "");//русский язык в консоли
+	setlocale(LC_ALL, "en_US.UTF-8");
 
 //1.	Реализовать функцию перевода чисел из десятичной системы в двоичную, используя рекурсию.
 	unsigned int a1;
