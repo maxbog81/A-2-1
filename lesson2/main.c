@@ -9,3 +9,19 @@
 //2.	Реализовать функцию возведения числа a в степень b :
 //a.Без рекурсии.
 //b.Рекурсивно.
+
+void DecToBin(int x)
+{
+	if (x >= 2)
+	{
+		DecToBin(x / 2);
+	}
+	printf("%d", x % 2);
+}
+
+int power(int a, int b)
+{
+	if (b > 0)
+		return a * power(a, b - 1);
+	return 1;
+}
